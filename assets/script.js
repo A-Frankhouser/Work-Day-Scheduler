@@ -12,7 +12,7 @@ var containerElement = $('div');
 
 
 // ----------------------------------------------------------
-var times = ["9 AM", "10 AM", '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM'];
+var times = ["  9 AM", "10 AM", '11 AM', '12 PM', '  1 PM', '  2 PM', '  3 PM', '  4 PM', '  5 PM'];
 // ----------------------------------------------------------
 
 
@@ -29,14 +29,16 @@ for ( var i = 0; i < times.length; i++) {
         timeHour.text(times[i])
         
         // Event
-    var inputSchedule = $('<span>');
+    var inputSchedule = $('<input>');
+        inputSchedule.attr('text')
         inputSchedule.addClass('textarea');
         inputSchedule.attr('data-number', times[i])
-        inputSchedule.text('hello')
+        inputSchedule.css('width', '80%')
 
         // Save Button
     var saveButton = $('<button>');
-        saveButton.addClass('saveBtn saveBtn i:hover textarea')
+        saveButton.addClass('saveBtn saveBtn i:hover textarea');
+        saveButton.text('Remember')
     
         // Appending
     containerElement.append(timeBlockElement)
@@ -45,4 +47,7 @@ for ( var i = 0; i < times.length; i++) {
     timeBlockElement.append(saveButton)
 }
 
+if (moment()) {
+    $('timeBlockElement').addClass('past')
+}
 
