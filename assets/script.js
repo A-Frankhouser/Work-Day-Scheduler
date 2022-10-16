@@ -1,4 +1,3 @@
-
 // Set Up Live Timer------------------------------------
 function update() {
     $('#currentDay').html(moment().format('MMMM Do YYYY, h:mm:ss a'));
@@ -7,15 +6,13 @@ setInterval(update, 1000);
 // -----------------------------------------------------
 
 
-
 // Container-----------------------------
 var containerElement = $('div');
 // --------------------------------------
 
 
-
 // ----------------------------------------------------------
-var times = ["9", "10", '11', '12', '1', '2', '3', '4', '5'];
+var times = ["9 AM", "10 AM", '11 AM', '12 PM', '1 PM', '2 PM', '3 PM', '4 PM', '5 PM'];
 // ----------------------------------------------------------
 
 
@@ -31,15 +28,15 @@ for ( var i = 0; i < times.length; i++) {
         timeHour.addClass('hour')
         timeHour.text(times[i])
         
-        // What is in your schedule
+        // Event
     var inputSchedule = $('<span>');
-        inputSchedule.addClass(' textarea')
+        inputSchedule.addClass('textarea');
         inputSchedule.attr('data-number', times[i])
         inputSchedule.text('hello')
 
         // Save Button
     var saveButton = $('<button>');
-        saveButton.addClass('saveBtn saveBtn i:hover')
+        saveButton.addClass('saveBtn saveBtn i:hover textarea')
     
         // Appending
     containerElement.append(timeBlockElement)
