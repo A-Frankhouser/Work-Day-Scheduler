@@ -29,7 +29,7 @@ function timeTracker() {
 
 
         // Will add class based on current time
-        if (hourTime > currentTime) {
+        if (hourTime < currentTime) {
             $(this).removeClass("future");
             $(this).removeClass("present");
             $(this).addClass("past");
