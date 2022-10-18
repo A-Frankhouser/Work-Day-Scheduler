@@ -20,7 +20,7 @@
 ## Links:
     GitHub Repository: https://github.com/A-Frankhouser/Work-Day-Scheduler
 
-    Deployed Site: 
+    Deployed Site: https://a-frankhouser.github.io/Work-Day-Scheduler/
 
 ## References:
     I had some great help with this project from other students. These people were Mike Johnson, Ana Fede, Chris Lemmon, David Proto, David Parker, Joe Libadia, and Ama Frema. They really helped me with the fundamental concepts and made me look at it from a different perspective.
